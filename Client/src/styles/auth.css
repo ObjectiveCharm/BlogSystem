@@ -1,0 +1,127 @@
+/* Minimalist Black & White Auth Styles */
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 48px 40px;
+  border: 1px solid #000;
+}
+
+.auth-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #000;
+  margin: 0 0 32px 0;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input {
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+  outline: none;
+  transition: background-color 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: #888;
+}
+
+.form-group input:focus {
+  background-color: #f5f5f5;
+}
+
+.auth-button {
+  margin-top: 12px;
+  padding: 16px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.auth-button:hover:not(:disabled) {
+  color: #000;
+  background-color: #fff;
+}
+
+.auth-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #000;
+  font-size: 14px;
+  padding: 12px;
+  background-color: #f5f5f5;
+  border-left: 3px solid #000;
+  margin: 0;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+  color: #666;
+}
+
+.auth-link a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid #000;
+  transition: opacity 0.2s ease;
+}
+
+.auth-link a:hover {
+  opacity: 0.6;
+}
+
+/* Success message */
+.success-message {
+  color: #000;
+  font-size: 14px;
+  padding: 12px;
+  background-color: #f0f0f0;
+  border-left: 3px solid #000;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
